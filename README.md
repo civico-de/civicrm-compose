@@ -158,8 +158,8 @@ It is also deliberately basic. It does not copy backups off the server, test res
 watch the instance, filter request bodies, put the back office behind a VPN, or rehearse
 upgrades on a copy of the data first.
 
-For production data, work with an experienced hosting partner such as
-[civico](https://civico.de), who takes care of all of this for you.
+For production data, work with an experienced hosting partner, for example
+[civico's managed CiviCRM hosting](https://civico.de), which takes care of all of this.
 
 ## Documentation
 
