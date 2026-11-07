@@ -117,8 +117,9 @@ and deletes backups older than 14 days. Run it nightly from the host's crontab:
 30 2 * * * cd /path/to/civicrm && ./backup.sh > /dev/null
 ```
 
-`./restore.sh backups/<timestamp>` puts all three back and keeps the state it replaces in
-`backups/pre-restore-<timestamp>.*`.
+`./restore.sh backups/<timestamp>` puts all three back and keeps the current database and
+`.env` in `backups/pre-restore-<timestamp>.*`. Files uploaded since the backup are replaced
+without a copy.
 
 The backups stay on the same server. Copy `backups/` somewhere else, and keep that copy as
 safe as `.env` itself: every backup holds its passwords.
