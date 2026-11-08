@@ -30,7 +30,9 @@ contact data. Sign-up, event and donation forms can also come straight from Civi
 
 ## Quick start
 
-You need a server with Docker, a DNS name pointing at it and ports 80 and 443 open.
+You need a server with Docker and Docker Compose 5.0.2 or newer, a DNS name pointing at it and
+ports 80 and 443 open. Older Compose versions fail `upgrade.sh` and `restore.sh` on the cron
+container.
 
 ```sh
 git clone https://github.com/civico-de/civicrm-standalone-compose.git civicrm && cd civicrm
