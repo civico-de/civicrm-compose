@@ -79,6 +79,9 @@ services:
   cron:
     <<: *civicrm
     user: www-data
+    # The image's health check asks Apache, which this container does not run.
+    healthcheck:
+      disable: true
     depends_on:
       init:
         condition: service_completed_successfully
